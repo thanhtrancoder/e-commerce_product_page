@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Product</title>
+  </head>
+  <body class="font-[Nunito]">
+    <div class="p-3 flex justify-center">
+      <img src="/images/logo.avif" alt="" class="h-11" />
+    </div>
+
+    <div class="py-8 px-4">
+      <div class="">
+        <div class="relative inline-block overflow-hidden">
+          <img
+            id="left-product-img"
+            src="/images/products/LymphDrainageREWAMPEDvisualsArtboard13.webp"
+            class="absolute left-0 top-0 transform -translate-x-full w-full aspect-square object-cover rounded-lg"
+          />
+          <img
+            src="/images/products/LymoPDPImagesArtboard1.webp"
+            alt=""
+            class="w-full aspect-square object-cover rounded-lg"
+            id="product-img"
+          />
+          <img
+            id="right-product-img"
+            src="/images/products/LymphDrainageREWAMPEDvisualsArtboard2.webp"
+            class="absolute right-0 top-0 transform translate-x-full w-full aspect-square object-cover rounded-lg"
+          />
+          <img
+            src="/images/nysale.avif"
+            alt=""
+            class="absolute top-4 right-4 w-20 h-20 object-cover rounded-lg"
+          />
+          <button
+            id="prev-product-btn"
+            class="absolute top-1/2 transform -translate-y-1/2 text-white left-6 border border-2 rounded-full flex item-centers justify-center p-1 cursor-pointer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5 8.25 12l7.5-7.5"
+              />
+            </svg>
+          </button>
+          <button
+            id="next-product-btn"
+            class="absolute right-6 top-1/2 transform -translate-y-1/2 text-white border border-2 rounded-full flex item-centers justify-center p-1 cursor-pointer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m8.25 4.5 7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </button>
+          <button
+            class="flex items-center justify-center gap-2 absolute bottom-8 py-2 px-9 left-1/2 transform -translate-x-1/2 bg-white rounded-full border opacity-90 cursor-pointer"
+          >
+            <img
+              src="/assets/icons/icons8-leaf-64.png"
+              alt=""
+              class="w-6 h-6"
+            />
+            <span class="whitespace-nowrap text-sm font-montserrat"
+              >Nutritional Information</span
+            >
+          </button>
+        </div>
+      </div>
+      <div class="relative overflow-hidden">
+        <div
+          id="preview-products-img"
+          class="relative grid grid-cols-4 gap-2 mb-6"
+        >
+          <img
+            id="left-preview-product-img"
+            src="/images/products/LymphDrainageREWAMPEDvisualsArtboard13.webp"
+            alt=""
+            class="absolute top-0 -left-2 transform -translate-x-full h-full aspect-square object-cover rounded-lg"
+          />
+          <img
+            id="preview-product1-img"
+            src="/images/products/LymoPDPImagesArtboard1.webp"
+            alt=""
+            class="w-full aspect-square object-cover rounded-lg"
+          />
+          <img
+            id="preview-product2-img"
+            src="/images/products/LymphDrainageREWAMPEDvisualsArtboard2.webp"
+            alt=""
+            class="w-full aspect-square object-cover rounded-lg"
+          />
+          <img
+            id="preview-product3-img"
+            src="/images/products/LymphDrainageREWAMPEDvisualsArtboard3.webp"
+            alt=""
+            class="w-full aspect-square object-cover rounded-lg"
+          />
+          <img
+            id="preview-product4-img"
+            src="/images/products/LymoPDPImagesArtboard4.webp"
+            alt=""
+            class="w-full aspect-square object-cover rounded-lg"
+          />
+          <img
+            id="right-preview-product-img"
+            src="/images/products/LymphDrainageREWAMPEDvisualsArtboard5.webp"
+            alt=""
+            class="absolute top-0 -right-2 transform translate-x-full h-full aspect-square object-cover rounded-lg"
+          />
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <div class="flex">
+          <img src="/assets/icons/icons8-star-50.png" class="w-3 h-3" />
+          <img src="/assets/icons/icons8-star-50.png" class="w-3 h-3" />
+          <img src="/assets/icons/icons8-star-50.png" class="w-3 h-3" />
+          <img src="/assets/icons/icons8-star-50.png" class="w-3 h-3" />
+          <img src="/assets/icons/icons8-star-50.png" class="w-3 h-3" />
+        </div>
+
+        <p class="text-xs">4.8/5 Excellent | Based on 2381 Reviews</p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

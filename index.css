@@ -1,0 +1,51 @@
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.slide-to-right {
+  animation: slideFromRight 0.5s ease-out forwards;
+}
+@keyframes slideFromRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.slide-to-right-1o4 {
+  animation: slideFromRight1o4 0.5s ease-out forwards;
+}
+@keyframes slideFromRight1o4 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(25%);
+  }
+}
+
+.slide-to-left {
+  animation: slideToRight 0.5s ease-out forwards;
+}
+@keyframes slideToRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.slide-to-left-1o4 {
+  animation: slideToRight1o4 0.5s ease-out forwards;
+}
+@keyframes slideToRight1o4 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-25%);
+  }
+}
