@@ -27,9 +27,9 @@
 }
 
 .slide-to-left {
-  animation: slideToRight 0.5s ease-out forwards;
+  animation: slideToLeft 0.5s ease-out forwards;
 }
-@keyframes slideToRight {
+@keyframes slideToLeft {
   from {
     transform: translateX(0);
   }
@@ -38,14 +38,62 @@
   }
 }
 
-.slide-to-left-1o4 {
-  animation: slideToRight1o4 0.5s ease-out forwards;
+.slide-to-left-2 {
+  animation: slideToLeft2 0.5s ease-out forwards;
 }
-@keyframes slideToRight1o4 {
+@keyframes slideToLeft2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+.slide-to-left-3 {
+  animation: slideToLeft3 0.5s ease-out forwards;
+}
+@keyframes slideToLeft3 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-300%);
+  }
+}
+
+.slide-to-left-1o4 {
+  animation: slideToLeft1o4 0.5s ease-out forwards;
+}
+@keyframes slideToLeft1o4 {
   from {
     transform: translateX(0);
   }
   to {
     transform: translateX(-25%);
+  }
+}
+
+.slide-to-left-2o4 {
+  animation: slideToLeft2o4 0.5s ease-out forwards;
+}
+@keyframes slideToLeft2o4 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.slide-to-left-3o4 {
+  animation: slideToLeft3o4 0.5s ease-out forwards;
+}
+@keyframes slideToLeft3o4 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-75%);
   }
 }
