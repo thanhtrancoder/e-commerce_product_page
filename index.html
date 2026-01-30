@@ -6,7 +6,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       @theme {
-        --color-clifford: #da373d;
+        --color-buy-green: #039869;
+        --color-black-bf: #000000bf;
       }
     </style>
     <link rel="stylesheet" href="index.css" />
@@ -196,7 +197,7 @@
             />
             <button
               id="nutritional-info-btn"
-              class="flex items-center justify-center gap-2 absolute bottom-8 py-2 px-9 left-1/2 transform -translate-x-1/2 bg-white rounded-full border opacity-90 cursor-pointer"
+              class="flex items-center justify-center gap-2 absolute bottom-8 py-2 px-9 left-1/2 transform -translate-x-1/2 bg-white rounded-full border opacity-85 cursor-pointer"
               onclick="handleNutritionalInfoClick()"
             >
               <img
@@ -299,7 +300,7 @@
 
           <button
             id="prev-product-btn"
-            class="absolute top-1/2 transform -translate-y-1/2 text-white left-6 border border-2 rounded-full flex item-centers justify-center p-1 cursor-pointer"
+            class="absolute top-1/2 transform bg-white/15 -translate-y-1/2 text-white left-6 border border-2 rounded-full flex item-centers justify-center p-1 cursor-pointer"
             onclick="handlePrevProductClick()"
           >
             <svg
@@ -319,7 +320,7 @@
           </button>
           <button
             id="next-product-btn"
-            class="absolute right-6 top-1/2 transform -translate-y-1/2 text-white border border-2 rounded-full flex item-centers justify-center p-1 cursor-pointer"
+            class="absolute right-6 top-1/2 transform bg-white/15 -translate-y-1/2 text-white border border-2 rounded-full flex item-centers justify-center p-1 cursor-pointer"
             onclick="handleNextProductClick()"
           >
             <svg
@@ -517,7 +518,104 @@
         </div>
       </div>
 
-      <div class="bg-red-500">test</div>
+      <div class="bg-[#f3eee0] p-3 rounded-lg">
+        <div>
+          <form class="space-y-3.5">
+            <div class="rounded-xl border border-buy-green">
+              <div class="flex items-center bg-white p-4 rounded-xl">
+                <input
+                  type="radio"
+                  value="buy-1"
+                  name="buy"
+                  class="size-6 accent-buy-green appearance-none border-2 border-buy-green rounded-full"
+                />
+                <div class="ml-3">
+                  <p>1 Bottle</p>
+                  <p class="text-xs">1 bottle total | Save $27.99</p>
+                </div>
+                <p class="ml-auto line-through font-montserrat text-black-bf">
+                  $59.95
+                </p>
+              </div>
+              <div class="rounded-b-xl divide-y divide-white overflow-hidden">
+                <div class="flex items-center bg-buy-green py-1 px-2">
+                  <img
+                    src="/assets/icons/delivery-truck_icon.webp"
+                    class="w-8 h-8"
+                  />
+                  <span class="text-white ml-2 text-xs">Free USA Shipping</span>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-xl border border-buy-green">
+              <div class="flex items-center bg-white p-4 rounded-xl">
+                <input
+                  type="radio"
+                  value="buy-1"
+                  name="buy"
+                  class="size-6 accent-buy-green appearance-none border-2 border-buy-green rounded-full"
+                />
+                <div class="ml-3">
+                  <p>Buy 2 Get 1 Free</p>
+                  <p class="text-xs">3 bottles total | Save $115.93</p>
+                </div>
+                <p class="ml-auto line-through font-montserrat text-black-bf">
+                  $179.85
+                </p>
+              </div>
+              <div class="rounded-b-xl divide-y divide-white overflow-hidden">
+                <div class="flex items-center bg-buy-green py-1 px-2">
+                  <img
+                    src="/assets/icons/delivery-truck_icon.webp"
+                    class="w-8 h-8"
+                  />
+                  <span class="text-white ml-2 text-xs">Free USA Shipping</span>
+                </div>
+                <div class="flex items-center bg-buy-green py-1 px-2">
+                  <img src="/assets/icons/download_icon.png" class="w-8 h-8" />
+                  <span class="text-white ml-2 text-xs"
+                    >Free Anti-Bloating Protocol E-book</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="rounded-xl border border-buy-green">
+              <div class="flex items-center bg-white p-4 rounded-xl">
+                <input
+                  type="radio"
+                  value="buy-1"
+                  name="buy"
+                  class="size-6 accent-buy-green appearance-none border-2 border-buy-green rounded-full"
+                />
+                <div class="ml-3">
+                  <p>Buy 2 Get 1 Free</p>
+                  <p class="text-xs">3 bottles total | Save $115.93</p>
+                </div>
+                <p class="ml-auto line-through font-montserrat text-black-bf">
+                  $179.85
+                </p>
+              </div>
+              <div class="rounded-b-xl divide-y divide-white overflow-hidden">
+                <div class="flex items-center bg-buy-green py-1 px-2">
+                  <img
+                    src="/assets/icons/delivery-truck_icon.webp"
+                    class="w-8 h-8"
+                  />
+                  <span class="text-white ml-2 text-xs">Free USA Shipping</span>
+                </div>
+                <div class="flex items-center bg-buy-green py-1 px-2">
+                  <img src="/assets/icons/download_icon.png" class="w-8 h-8" />
+                  <span class="text-white ml-2 text-xs"
+                    >Free Anti-Bloating Protocol E-book</span
+                  >
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div>END</div>
     </div>
     <!-- end main -->
 
